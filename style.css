@@ -1,8 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
 }
 
 body {
@@ -17,12 +63,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 article {
-    width: 75%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px;
     text-align: center;
     border-radius: 10px;
     background-color: white;
@@ -40,7 +85,7 @@ article {
 }
 
 article img {
-    max-width: 300px;
+    max-width: 350px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -57,7 +102,7 @@ article img {
     font-size: 14px;
     font-weight: 700;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 45px;
     color: rgb(34, 34, 230);
 }
 
@@ -65,7 +110,7 @@ article img {
     font-size: 14px;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .pricetext {
@@ -86,7 +131,7 @@ article img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    margin: 10px 0px 10px 10px;
+    margin: 18px 0px 15px 10px;
     background-color: #d6e1ff;
 }
 
@@ -100,13 +145,15 @@ article img {
     box-shadow: 0px 2px 5px grey;
 }
 
-.cancel-button button {
+.cancel-link {
+    padding: 15px 0px 15px 0px;
+}
+
+.cancel-link a {
     font-size: 14px;
     font-weight: bold;
+    text-decoration: none;
     color: grey;
-    background: none;
-    border: none;
-    padding: 15px 0px 15px 0px;
 }
 
 .button {
